@@ -4,8 +4,7 @@
   "description": "Boilerplate for React apps",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --inline --open --hot",
-    "dev": "concurrently \"nodemon server.js\" \"webpack-dev-server --mode development --inline --open --hot\"",
+    "start": "concurrently \"nodemon server.js\" \"webpack-dev-server --mode development --inline --open --hot\"",
     "build": "webpack --mode production"
   },
   "author": "Play Ra",
