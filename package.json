@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "concurrently \"webpack --mode production\" \"cross-env NODE_ENV=dev nodemon --exec babel-node server/index.js\"",
+    "server": "cross-env NODE_ENV=dev nodemon --exec babel-node server/index.js",
     "dev": "concurrently \"nodemon server.js\" \"webpack-dev-server --mode development --inline --open --hot\"",
     "build": "webpack --mode production"
   },

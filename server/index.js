@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOMServer from 'react-dom/server'
 import { StaticRouter } from 'react-router'
 import express from 'express'
-import App from '../src/index.js'
+import App from '../src/App'
 
 const app = express() // create an instance of express
 const PORT = process.env.PORT || 5000 // create the port

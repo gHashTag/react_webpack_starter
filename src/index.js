@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { BrowserRouter } from 'react-router-dom'
+import { MemoryRouter } from 'react-router'
 import App from './App'
 
 ReactDOM.render((
-  <BrowserRouter>
+  <MemoryRouter>
     <App/>
-  </BrowserRouter>
+  </MemoryRouter>
 ), document.getElementById('app'))
