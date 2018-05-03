@@ -1,5 +1,5 @@
 import React from "react"
-import { Text, View } from 'react-native'
+import { Text, Image, View } from 'react-native'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom"
 
 const App = () => (
@@ -17,6 +17,10 @@ const App = () => (
     </ul>
 
     <Text>Hello World</Text>
+    <img
+      style={{width: 150, height: 150}}
+      src='https://facebook.github.io/react-native/docs/assets/favicon.png'
+    />
 
     <hr />
 

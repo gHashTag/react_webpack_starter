@@ -22,8 +22,24 @@ module.exports = {
         },
       },
       {
+        test: /\.(gif|png|jpe?g|svg)$/i,
+        use: [
+          'file-loader',
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              bypassOnDebug: true,
+            },
+          },
+        ],
+      },
+      {
         test: /\.css$/,
         use: ['style-loader', 'css-loader']
+      },
+      {
+        test: /\.(png|jpe?g|gif)$/,
+        loader: 'react-native-web-image-loader?name=[hash].[ext]'
       }
     ]
   },
