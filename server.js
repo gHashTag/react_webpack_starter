@@ -6,6 +6,7 @@ app.use(express.static(__dirname + '/build'))
 
 app.get('/', function (req, res) {
   console.log('req', req)
+  console.log('res', res)
   res.send('Hello World Yogi')
 })
 
