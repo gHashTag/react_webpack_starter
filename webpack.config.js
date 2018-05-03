@@ -1,12 +1,17 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const ENV = process.env
+const isProduction = ENV.NODE_ENV === 'production'
 
 module.exports = {
   entry: './src/index.js',
   output: {
-    path: path.join(__dirname, '/dist'),
+    path: path.join(__dirname, '/build'),
     filename: 'index_bundle.js'
   },
+  devtool: isProduction
+    ? 'source-map'
+    : 'eval-source-map' ,
   module: {
     rules: [
       {
@@ -27,4 +32,4 @@ module.exports = {
       template: './src/index.html'
     })
   ]
-};
+}
