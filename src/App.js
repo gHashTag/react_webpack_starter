@@ -1,4 +1,5 @@
 import React from "react"
+import { Text, View } from 'react-native'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom"
 
 const App = () => (
@@ -14,6 +15,8 @@ const App = () => (
         <Link to="/topics">Topics</Link>
       </li>
     </ul>
+
+    <Text>Hello World</Text>
 
     <hr />
 

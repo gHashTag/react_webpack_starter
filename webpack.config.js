@@ -4,7 +4,7 @@ const ENV = process.env
 const isProduction = ENV.NODE_ENV === 'production'
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './index.js',
   output: {
     path: path.join(__dirname, '/build'),
     filename: 'index_bundle.js'

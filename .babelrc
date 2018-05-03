@@ -2,6 +2,7 @@
   "presets": ["env", "react"],
   "plugins": [
     [
+      "react-native-web",
       "transform-object-rest-spread",
       {
         "useBuiltIns": true
